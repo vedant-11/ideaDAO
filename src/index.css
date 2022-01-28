@@ -115,7 +115,7 @@ p {
 
 .member-page form h5 {
   margin-top: 0;
-  color: #7700ee;
+  color: #fafafa;
 }
 
 .member-page form .card > div {
@@ -129,11 +129,18 @@ p {
 }
 
 .card {
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 1rem;
   border-radius: 1rem;
   color: #000;
-  box-shadow: 3.1px 6.2px 6.2px hsl(0deg 0% 0% / 0.4);
+  box-shadow: 2px 4px 5px 2px rgba(242, 173, 173, 0.25);
+  background: rgba(255, 255, 255, 0.19);
+  border: 1px solid #e4e4e4;
+  box-sizing: border-box;
+  backdrop-filter: blur(59px);
+  /* Note: backdrop-filter has minimal browser support */
+
+  border-radius: 8px;
 }
 
 button {
