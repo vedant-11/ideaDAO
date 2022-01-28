@@ -9,7 +9,7 @@ const appModule = sdk.getAppModule(
   try {
     const voteModule = await appModule.deployVoteModule({
       // Give your governance contract a name.
-      name: "ideaDAO's idea Proposals",
+      name: "ideaDAO's Proposals",
 
       // This is the location of our governance token, our ERC-20 contract!
       votingTokenAddress: "0xFF4714AEa7D2CE3358ec45f40fB35A6bc2A0a40B",
@@ -36,6 +36,6 @@ const appModule = sdk.getAppModule(
       voteModule.address
     );
   } catch (err) {
-    console.error("Failed to deploy vote module", err);
+    console.log("Failed to deploy vote module", err);
   }
 })();

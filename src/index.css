@@ -1,10 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
 html,
 body {
   margin: 0;
-  font-family: Inter, sans-serif;
+  font-family: "Montserrat", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #7700ee;
+  background: linear-gradient(to right, #f857a6, #ff5858);
   color: #fff;
   overflow-x: hidden;
 }
@@ -115,24 +117,25 @@ h1 {
 }
 
 button {
-  cursor: pointer;
   background-color: #000;
   color: #fff;
   border: none;
   font-weight: bold;
   font-family: inherit;
   padding: 1.2rem 2rem;
-  text-transform: uppercase;
-  border-radius: 3rem;
+  /* text-transform: uppercase; */
+  border-radius: 1rem;
   font-size: 1.2rem;
 }
 
 button:hover {
   background-color: #121212;
+  cursor: pointer;
 }
 
 button:focus {
   background-color: #222;
+  cursor: pointer;
 }
 
 button:disabled {
