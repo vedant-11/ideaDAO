@@ -86,7 +86,7 @@ const App = () => {
       return;
     }
 
-    if (error instanceof UnsupportedChainIdError ) {
+    if (error instanceof UnsupportedChainIdError) {
       return (
         <div className="unsupported-network">
           <h2>Please connect to Rinkeby</h2>
@@ -177,6 +177,7 @@ const App = () => {
     return (
       <div className="landing">
         <h1>Welcome to ideaDAO</h1>
+        <p>A dao for Idea lovers.</p>
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
         </button>
