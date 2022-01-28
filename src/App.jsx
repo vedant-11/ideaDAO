@@ -177,7 +177,12 @@ const App = () => {
     return (
       <div className="landing">
         <h1>Welcome to ideaDAO</h1>
-        <p>A dao for Idea lovers.</p>
+        <div className="line"></div>
+        <p>
+          A dao for Idea lovers. Vote for the idea proposals and bring new ideas
+          in the world!{" "}
+        </p>
+
         <button onClick={() => connectWallet("injected")} className="btn-hero">
           Connect your wallet
         </button>
@@ -191,15 +196,15 @@ const App = () => {
     return (
       <div className="member-page">
         <h1>ideaDAO Member Page</h1>
-        <p>Congratulations on being a member</p>
+        <p>Congratulations on being a member! vote for the proposals below</p>
         <div>
           <div>
-            <h2>Member List</h2>
+            <h2 className="member">Member List</h2>
             <table className="card">
               <thead>
                 <tr>
-                  <th>Address</th>
-                  <th>Token Amount</th>
+                  <th className="th-address">Address</th>
+                  <th className="th-address">Token Amount</th>
                 </tr>
               </thead>
               <tbody>
@@ -317,7 +322,10 @@ const App = () => {
                           //default the "abstain" vote to chedked
                           defaultChecked={vote.type === 2}
                         />
-                        <label htmlFor={proposal.proposalId + "-" + vote.type}>
+                        <label
+                          htmlFor={proposal.proposalId + "-" + vote.type}
+                          className="control control--radio"
+                        >
                           {vote.label}
                         </label>
                       </div>
@@ -333,8 +341,8 @@ const App = () => {
                   : "Submit Votes"}
               </button>
               <small>
-                This will trigger multiple transactions that you will need to
-                sign.
+                Note:This will trigger multiple transactions that you will need
+                to sign.
               </small>
             </form>
           </div>
